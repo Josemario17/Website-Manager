@@ -2,40 +2,40 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Descrição
+## Description
 
-O **Website Manager** é uma aplicação poderosa e fácil de usar que permite gerenciar o conteúdo de um blog, suas páginas e realizar o deploy do site. Projetado para ser intuitivo, este gestor oferece uma interface amigável para administradores e editores, facilitando a criação, edição e publicação de conteúdo online.
+**Website Manager** is a powerful and easy-to-use application that allows you to manage blog content, pages, and deploy your site. Designed to be intuitive, this manager offers a user-friendly interface for administrators and editors, making it easy to create, edit, and publish online content.
 
-## Funcionalidades
+## Features
 
-- **Gerenciamento de Conteúdo de Blog**: Crie, edite e organize posts de blog com facilidade.
-- **Gerenciamento de Páginas**: Adicione, edite e remova páginas do seu site de forma intuitiva.
-- **Deploy Integrado**: Realize o deploy do seu site com apenas alguns cliques.
-- **Editor WYSIWYG**: Um editor "What You See Is What You Get" para facilitar a formatação do conteúdo.
-- **Suporte a Markdown**: Escreva seus posts e páginas usando Markdown para maior flexibilidade.
-- **Controle de Versão**: Mantenha o histórico de edições e versões dos seus conteúdos.
-- **Interface Responsiva**: Gerencie seu site de qualquer dispositivo, seja desktop, tablet ou celular.
-- **SEO Otimizado**: Ferramentas integradas para otimização de SEO, melhorando a visibilidade do seu site nos motores de busca.
+- **Blog Content Management**: Easily create, edit, and organize blog posts.
+- **Page Management**: Intuitively add, edit, and remove pages from your site.
+- **Integrated Deployment**: Deploy your site with just a few clicks.
+- **WYSIWYG Editor**: A "What You See Is What You Get" editor to simplify content formatting.
+- **Markdown Support**: Write your posts and pages using Markdown for greater flexibility.
+- **Version Control**: Keep track of edits and versions of your content.
+- **Responsive Interface**: Manage your site from any device, be it desktop, tablet, or mobile.
+- **SEO Optimized**: Integrated tools for SEO optimization, enhancing your site's visibility on search engines.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - **Frontend**: React, Tailwind CSS
 - **Backend**: Node.js, Express
-- **Banco de Dados**: MongoDB
-- **Deploy**: Docker, GitHub Actions
+- **Database**: MongoDB
+- **Deployment**: Docker, GitHub Actions
 
-## Instalação
+## Installation
 
-Siga os passos abaixo para configurar o projeto localmente:
+Follow the steps below to set up the project locally:
 
-1. Clone o repositório:
+1. Clone the repository:
 
     ```sh
-    git clone https://github.com/seu-usuario/website-manager.git
+    git clone https://github.com/your-username/website-manager.git
     cd website-manager
     ```
 
-2. Instale as dependências do backend e frontend:
+2. Install backend and frontend dependencies:
 
     ```sh
     # Backend
@@ -47,9 +47,9 @@ Siga os passos abaixo para configurar o projeto localmente:
     npm install
     ```
 
-3. Configure as variáveis de ambiente:
+3. Configure the environment variables:
 
-    Crie um arquivo `.env` no diretório `backend` com as seguintes variáveis:
+    Create a `.env` file in the `backend` directory with the following variables:
 
     ```env
     MONGODB_URI=your_mongodb_uri
@@ -57,7 +57,7 @@ Siga os passos abaixo para configurar o projeto localmente:
     JWT_SECRET=your_jwt_secret
     ```
 
-4. Inicie a aplicação:
+4. Start the application:
 
     ```sh
     # Backend
@@ -69,7 +69,8 @@ Siga os passos abaixo para configurar o projeto localmente:
     npm start
     ```
 
-    O frontend estará disponível em `http://localhost:3000` e o backend em `http://localhost:5000`.
+    The frontend will be available at `http://localhost:3000` and the backend at `http://localhost:5000`.
+
 ---
 
-Obrigado por usar o **Website Manager**! Esperamos que ele facilite a gestão do seu conteúdo online.
+Thank you for using **Website Manager**! We hope it makes managing your online content easier.
