@@ -6,9 +6,9 @@ import logo from '../../assets/img/logo3.png'
 export default function NavBarLeft() {
     
     return (
-        <div className="w-24 max-w-sm h-full min-h-full py-10 bg-[#7577cd3c]">
+        <div className="w-24 max-w-sm h-full min-h-full py-4 bg-[#7577cd3c]">
             <img src={logo} alt="" className='w-2/3 mx-auto' />
-            <div className='w-auto mx-auto flex flex-col items-center justify-center text-center my-5'>
+            <div className='w-auto mx-auto flex flex-col items-center justify-center text-center my-6'>
                 <Link className={`w-full px-2 py-4 flex items-center justify-center border-r-[3.5px] border-solid border-transparent duration-100 hover:border-white/65 hover:bg-white/10`}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
