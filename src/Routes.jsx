@@ -8,6 +8,10 @@ export default function AppRoutes(){
             <Routes>
                 <Route path="/" element={<Loader/>}></Route>
                 <Route path="/Home" element={<Home/>}></Route>
+                <Route path="/News" element={<Home/>}></Route>
+                <Route path="/pages" element={<Home/>}></Route>
+                <Route path="/acessibility" element={<Home/>}></Route>
+                <Route path="/config" element={<Home/>}></Route>
             </Routes>
         </BrowserRouter>
     )

@@ -93,8 +93,8 @@ const statusColor = {
 export default function VisitCharts() {
   return (
     <>
-      <Card className="sm:max-w-lg rounded-xl">
-        <h3 className="font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
+      <Card className="w-[650px] rounded-xl">
+        <h3 className="font-medium text-2xl text-tremor-content-strong dark:text-dark-tremor-content-strong">
           Visitas
         </h3>
         <AreaChart
