@@ -6,7 +6,7 @@ import logo from '../../assets/img/logo3.png'
 export default function NavBarLeft() {
     
     return (
-        <div className="w-24 max-w-sm h-full min-h-full py-4 bg-[#7577cd3c]">
+        <div className="w-24 fixed max-w-sm h-full min-h-full py-4 bg-[#7577cd3c]">
             <img src={logo} alt="" className='w-2/3 mx-auto' />
             <div className='w-auto mx-auto flex flex-col items-center justify-center text-center my-6'>
                 <Link className={`w-full px-2 py-4 flex items-center justify-center border-r-[3.5px] border-solid border-transparent duration-100 hover:border-white/65 hover:bg-white/10`}>

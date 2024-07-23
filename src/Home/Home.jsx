@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import NavBarLeft from "../Components/MainComponentes/NavBarLeft";
 import NavBarTop from "../Components/MainComponentes/NavBarTop";
 import { useState } from "react";
+import postImage from "../assets/img/posts.png";
+import pagesImage from "../assets/img/pages.png";
+import comentsImage from "../assets/img/comment.png";
+import men from "../assets/img/Man2.png";
+import VisitCharts from "../Components/VisitCharts";
 
 export default function Home() {
   const [nome, setNome] = useState("@user");
@@ -11,36 +16,45 @@ export default function Home() {
     <>
       <div className="w-screen h-screen max-w-full flex min-w-[1200px]">
         <NavBarLeft></NavBarLeft>
-        <div className="w-full h-auto">
+        <div className="w-full h-auto pl-24">
           <NavBarTop></NavBarTop>
           <div className="w-full h-auto px-20 pt-10">
             <div className="w-auto h-auto">
               <h1 className="text-4xl">Bem-vindo </h1>
-              <span className="text-gray-300">Saudações Pelo Turno!</span>
+              <span className="text-gray-400">Saudações Pelo Turno!</span>
             </div>
 
             <div className="w-auto h-auto my-7 flex justify-between gap-4">
-              <div className="p-4 border border-solid rounded-lg border-gray-300 grow">
+              <div className="p-6 border border-solid rounded-lg border-gray-300 grow relative flex flex-col justify-end">
+                <img
+                  src={men}
+                  alt="men image"
+                  className="w-36 absolute -top-20 -right-0"
+                />
                 <div className="grid">
                   <span className="text-xl">Olá {nome}</span>
-                  <span className="text-gray-300">{categoria}</span>
+                  <span className="text-gray-400">{categoria}</span>
                 </div>
-                
-                <div className="w-full h-auto my-3 flex gap-3">
-                  <div className="text-gray-300">
-                    <span className="text-xl">32</span>
+
+                <div className="w-full h-auto my-3 flex gap-5">
+                  <div className="text-gray-400">
+                    <span className="text-xl text-gray-100">32</span>
                     <span> Posts no Total</span>
                   </div>
-                  <div className="text-gray-300">
-                    <span className="text-xl">2002</span>
-                    <span> Edições Adicionadas</span>
+                  <div className="text-gray-400">
+                    <span className="text-xl text-gray-100">2002</span>
+                    <span> Edições</span>
                   </div>
                 </div>
               </div>
 
-              <div className="p-4 border border-solid rounded-lg flex flex-col justify-end border-gray-700 bg-white/10 min-w-[250px]">
+              <div className="p-6 border border-solid rounded-lg flex flex-col justify-end border-gray-700 bg-white/10 min-w-[250px]">
                 <div>
-                  <img src="" alt="" />
+                  <img
+                    src={postImage}
+                    alt="posts image"
+                    className="size-20 mb-6"
+                  />
                 </div>
                 <div className="grid">
                   <span className="text-gray-300">Total de Posts</span>
@@ -48,9 +62,13 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="p-4 border border-solid rounded-lg flex flex-col justify-end border-gray-700 bg-white/10 min-w-[250px]">
+              <div className="p-6 border border-solid rounded-lg flex flex-col justify-end border-gray-700 bg-white/10 min-w-[250px]">
                 <div>
-                  <img src="" alt="" />
+                  <img
+                    src={pagesImage}
+                    alt="pages image"
+                    className="size-20 mb-6"
+                  />
                 </div>
                 <div className="grid">
                   <span className="text-gray-300">Total de Páginas</span>
@@ -58,9 +76,13 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="p-4 border border-solid rounded-lg flex flex-col justify-end border-gray-700 bg-white/10 min-w-[250px]">
+              <div className="p-6 border border-solid rounded-lg flex flex-col justify-end border-gray-700 bg-white/10 min-w-[250px]">
                 <div>
-                  <img src="" alt="" />
+                  <img
+                    src={comentsImage}
+                    alt="comment image"
+                    className="size-20 mb-6"
+                  />
                 </div>
                 <div className="grid">
                   <span className="text-gray-300">Comentários</span>
@@ -69,10 +91,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div>chart</div>
-
-            <div>
-              <div>
+            <div className="w-full flex justify-between">
+              <div className="w-1/2 flex justify-start">
+                <VisitCharts></VisitCharts>
+              </div>
+              <div className="">
                 Posts Recentes
                 <button>
                   <svg
