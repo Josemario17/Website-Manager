@@ -1,7 +1,7 @@
 # Website Manager
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-[![Screenshot](../screenshot.png)](../screenshot.png)
+[![Screenshot](../screenshot.png)](screenshot.png)
 
 
 
