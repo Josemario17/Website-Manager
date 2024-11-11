@@ -35,39 +35,7 @@ Follow the steps below to set up the project locally:
     cd website-manager
     ```
 
-2. Install backend and frontend dependencies:
 
-    ```sh
-    # Backend
-    cd backend
-    npm install
-
-    # Frontend
-    cd ../frontend
-    npm install
-    ```
-
-3. Configure the environment variables:
-
-    Create a `.env` file in the `backend` directory with the following variables:
-
-    ```env
-    MONGODB_URI=your_mongodb_uri
-    PORT=5000
-    JWT_SECRET=your_jwt_secret
-    ```
-
-4. Start the application:
-
-    ```sh
-    # Backend
-    cd backend
-    npm start
-
-    # Frontend
-    cd ../frontend
-    npm start
-    ```
 
     The frontend will be available at `http://localhost:3000` and the backend at `http://localhost:5000`.
 
