@@ -6,7 +6,7 @@ export default function AppRoutes(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Loader/>}></Route>
+                <Route path="/" element={<Home/>}></Route>
                 <Route path="/Home" element={<Home/>}></Route>
                 <Route path="/config" element={<Home/>}></Route>
             </Routes>
