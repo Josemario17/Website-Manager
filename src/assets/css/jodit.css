@@ -1,0 +1,15 @@
+p{
+    color: #fff;
+    font-family: sans-serif !important;
+}
+.jodit-container {
+    background-color: #000; /* fundo escuro */
+    color: #ffffff; /* texto claro */
+}
+.jodit-toolbar__button {
+    background-color: #444444; /* cor dos botões */
+    color: #ffffff;
+}
+.jodit-toolbar__button:hover {
+    background-color: #555555;
+}

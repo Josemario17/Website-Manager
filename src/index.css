@@ -31,7 +31,8 @@ body {
 }
 
 
-*{
+:is(h1, h2, h3, h4, h5, h6, a, div, span, img, ul, li, table, tr, td, th, header, footer, section, article, aside, nav, main, figure, figcaption, blockquote, pre, code, form, input, button, select, textarea) {
+
   font-family: Montserrat;
 }
 

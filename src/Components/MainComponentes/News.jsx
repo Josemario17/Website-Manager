@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import Title from "../Title";
+import ModalAddNews from "../ModalAddNews";
+import { useAllStore } from "../../Store/AppStore";
 
 const News = () => {
+    const { modalStatusShow, setModalStatusShow } = useAllStore()
   return (
+    <>
+        
     <div className="w-full h-auto px-20 pt-10">
       <section className="max-w-7xl">
         <Title />
@@ -20,7 +25,7 @@ const News = () => {
                   <th className="px-4 py-3 w-[23%]"></th>
                   <th className="px-4 py-3 w-[15%]"></th>
                   <th className="px-4 py-3 w-[10%]">
-                    <button className=" border border-gray-400 rounded-md text-base font-normal text-white px-6 py-2 hover:bg-white hover:text-black">
+                    <button onClick={e => setModalStatusShow(!modalStatusShow)} className=" border border-gray-400 rounded-md text-base font-normal text-white px-6 py-2 hover:bg-white hover:text-black">
                       Adicionar
                     </button>
                   </th>
@@ -122,14 +127,14 @@ const News = () => {
                       .map((_, i) => (
                         <li
                           key={i}
-                          className={`px-4 py-3 ${i === 0 ? "border border-gray-200 rounded-lg" : ""}`}
+                          className={`px-4 py-2 ${i === 0 ? "border border-gray-200 rounded-lg" : ""}`}
                         >
                           {i + 1}
                         </li>
                       ))}
                   </ul>
                 </div>
-                <button className="font-bold border border-gray-400 md:px-4 md:py-3 p-2 rounded-md hover:border-gray-100">
+                <button className="font-bold border border-gray-400 md:px-4 md:py-2 p-2 rounded-md hover:border-gray-100">
                   Próximo
                 </button>
               </div>
@@ -138,6 +143,11 @@ const News = () => {
         </div>
       </section>
     </div>
+    {
+        modalStatusShow && 
+        <ModalAddNews />
+    }
+    </>
   );
 };
 

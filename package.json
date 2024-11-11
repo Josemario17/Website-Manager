@@ -31,6 +31,7 @@
     "@tremor/react": "^3.17.4",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
+    "jodit-react": "^4.1.2",
     "react": "^18.2.0",
     "react-day-picker": "^9.0.3",
     "react-dom": "^18.2.0",

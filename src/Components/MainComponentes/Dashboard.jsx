@@ -6,9 +6,11 @@ import pagesImage from "../../assets/img/pages.png";
 import comentsImage from "../../assets/img/comment.png";
 import SectionNewsDashboard from "../SectionNewsDashboard";
 import Title from "../Title";
+import { useAllStore } from "../../Store/AppStore";
 
 const Dashboard = () => {
     const [categoria, setCategoria] = useState("Editor/Escritor");
+    const { setDashboardPath, modalStatusShow, setModalStatusShow } = useAllStore();
     const [nome, setNome] = useState("@user");
     const [noticias, setNoticias] = useState([
         {
@@ -111,7 +113,10 @@ const Dashboard = () => {
             <a href="" className="text-2xl">
               Posts Recentes
             </a>
-            <button className="w-auto px-6 h-10 items-center duration-200 ease-in-out flex justify-between gap-4 border border-solid border-gray-300 rounded-lg hover:bg-[#7577cd] hover:text-white hover:border-[#7577cd]">
+            <button onClick={e => {
+              setDashboardPath("News");
+              setModalStatusShow(!modalStatusShow);
+            } }  className="w-auto px-6 h-10 items-center duration-200 ease-in-out flex justify-between gap-4 border border-solid border-gray-300 rounded-lg hover:bg-[#7577cd] hover:text-white hover:border-[#7577cd]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
